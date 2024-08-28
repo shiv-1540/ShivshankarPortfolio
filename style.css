@@ -1,0 +1,463 @@
+*{
+   padding:0px;
+   margin:0px;
+   box-sizing: border-box;
+   font-family: 'Poppins' sans-serif;
+   text-decoration: none;
+}
+body{
+    background-color: #080808;
+}
+.side{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:30vh;
+    left:2%;
+    /* border:#e20fa9 5px dashed; */
+}
+.side img{
+   height:50px;
+   width:50px;
+   border-radius: 15px;
+}
+/* 
+<!--Home Page Starts here--> */
+#home{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.logo{
+    width:140px;
+}
+nav ul{
+    display: flex;
+    gap:20px;
+    font-size:40px;
+    list-style-type: none;
+}
+nav ul li{
+    display:inline-block;
+    list-style-type:none;
+    margin:10px,20px;
+   
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size:18px;
+    position:relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:#ff004f;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+
+.intro{
+    margin-top:15%;
+    font-size:25px;
+    color: #f0e7e7;
+    align-items: top;
+    background-color: #1d222d;
+    padding:5%;
+}
+.intro h3{
+    font-size:40px;
+    margin-top:20px;
+}
+#name{
+   color:#ff004f;
+}
+
+
+.main{
+    display:flex;
+    position: relative;
+    flex-wrap: wrap;
+    gap:20vw;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    width: 300px; height: 400px;
+    position: relative;
+    top:40px;
+    align-items: center;
+    background-color: #050935;
+    box-shadow: 10px 10px 42px 0 rgba(207, 5, 5, 0.75);
+}
+
+
+  .photo{
+    border-radius: 50%;
+    border:#262a2e 5px dashed;
+    width:96%;
+    height:95%;
+    position:relative;
+    top:5px;
+}
+
+/* <!--About Me page start here--> */
+
+#aboutme{
+  
+    /* background-image: url(./Images/about_bg.png); */
+    width:100%;
+    height:auto;
+    padding:10px; 
+    border: 7px solid rgb(26, 26, 221);
+    box-shadow: -10px -10px 10px 10px rgb(6, 175, 6);
+}
+#aboutme h2{
+    color:#fff;
+    padding:20px;
+    font-size:40px;
+}
+.aboutext{
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  height:70vh;
+  /* border: 4px solid rgb(255, 0, 0) ; */
+  box-shadow: 5px 5px 5px 5px rgba(52, 207, 9, 0.2);
+}
+ .photo1{
+    width: 400px; 
+     height:400px;
+    height:auto;
+    /* border: 3px solid rgb(47, 0, 255); */
+    border-radius: 50%; 
+    box-shadow: 5px 5px 5px 5px rgba(215, 243, 5, 0.2);
+}
+.aboutext p{
+    width:500px;
+    height:400px;
+    font-size: 25px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff;
+}
+.hi{
+    color:#e20fa9
+}
+/*Education section starts here*/
+.education{
+    /* height:100vh;
+    width:100%; */
+    font-size:25px;
+    color:wheat;
+    height:100vh;
+    margin:5%;
+}
+.edu{
+    padding:10%;
+}
+/* Project Section starts here */
+#projects{
+  margin-top: 50px;
+  background-color: #080808;
+  width:100%;
+  border: 7px solid rgb(26, 26, 221);
+  box-shadow: -10px -10px 10px 10px rgb(6, 175, 6);
+}
+#projects h2{
+    color:#fff;
+    font-size:40px;
+    padding:20px;
+}
+#projects .cards{
+    color:#fff;
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:40px;
+}
+.cards .card{
+     border: #262a2e solid 5px;
+     box-shadow: inset 6px 6px 6px 6px rgb(198, 9, 75);
+}
+.card img{
+    width:400px;
+}
+
+
+
+/* Skills Section starts here */
+#skills{
+    margin-top:  50px;
+    background-color:#080808;
+    color:#fff;
+    font-size: 1.5rem;
+    padding:10px; 
+    border: 7px solid rgb(26, 26, 221);
+    box-shadow: -10px -10px 10px 10px rgb(6, 175, 6);
+}
+#skills h2{
+    color:#fff;
+    font-size:40px;
+    padding:20px;
+}
+.skil{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skil .lang{
+    border: 5px solid rgb(24, 8, 73);
+
+}
+.skil .lang li{
+    display:flex;
+    align-items:center;
+}
+.skil .lang li img{
+    height:60px;
+    width:60px;
+}
+.lang h3{
+    padding:10px;
+}
+
+
+/* Experience Section starts from here */
+#exp{
+    margin-top: 50px;
+    background-color:#080808;
+    padding:10px; 
+    border: 7px solid rgb(26, 26, 221);
+    box-shadow: -10px -10px 10px 10px rgb(6, 175, 6);
+}
+#exp h2{
+    color:#fff;
+    font-size:40px;
+    padding:20px;
+}
+.swiper-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color:#fff;
+    font-size:25px;
+    gap:20px;
+}
+.swiper-slide img{
+    height:300px;
+    width:300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/* Contact section starts here */
+#connect{
+    margin-top: 70px;
+    background-color:#080808;
+    padding:10px;
+    border: 7px solid rgb(26, 26, 221);
+    box-shadow: -10px -10px 10px 10px rgb(6, 175, 6);
+    color:#fff;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+#connect h2{
+    color:#fff;
+    padding:10px;
+    font-size:40px;
+}
+.contact{
+     display:flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 
+Background Animation  of portfolio Bubbles */
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bubbles{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+
+.bubbles span{
+    z-index: 0;
+    width: 30px;
+    height: 30px;
+    background: rgb(231, 226, 226);
+    margin: 0 4px;
+    border-radius: 50%;
+    animation: animate_bubbles 20s linear infinite;
+    animation-duration: calc(125s/var(--i));
+    position: relative;
+}
+.bubbles span:nth-child(even){
+    background: rgb(215, 99, 99);
+}
+@keyframes animate_bubbles{
+    0%{
+        top: calc(100% + 4vw);
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(0.2);
+        top: -100px;
+    }
+}
+/* Animation for Background particles ends */
+/* Responsiveness */
+.bubbles{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    top:0;
+    left:0;
+}
+.bubble {
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(235, 8, 8);
+    box-shadow: inset 20px 20px 20px rgba(52, 207, 9, 0.2);
+    animation: flying 3s infinite ease-in;
+    z-index: -1;
+}
+
+.bubble:nth-child(1){
+    height:40px;
+    width:40px;
+    left:10%;
+    animation-duration:5s;
+}
+.bubble:nth-child(2){
+    height:80px;
+    width:80px;
+    left:20%;
+    animation-duration:7s;
+}
+.bubble:nth-child(3){
+    height:15px;
+    width:15px;
+    left:30%;
+    animation-duration:3s;
+}
+.bubble:nth-child(4){
+    height:25px;
+    width:25px;
+    left:40%;
+    animation-duration:9s;
+}
+.bubble:nth-child(5){
+    height:28px;
+    width:28px;
+    right:10%;
+    animation-duration:4s;
+}
+
+.bubble:nth-child(6){
+    height:50px;
+    width:50px;
+    right:20%;
+    animation-duration:7s;
+}
+.bubble:nth-child(7){
+    height:15px;
+    width:15px;
+    right:30%;
+    animation-duration:3s;
+}
+.bubble:nth-child(8){
+    height:25px;
+    width:25px;
+    right:40%;
+    animation-duration:9s;
+}
+
+
+@keyframes flying {
+    0%{
+        bottom:-100px;
+        transform:translateX(0);
+    }
+    50%{
+        transform:translateX(100px);
+    }
+    100%{
+        bottom:768px;
+        transform:translateX(-300px);
+    }
+}
+
