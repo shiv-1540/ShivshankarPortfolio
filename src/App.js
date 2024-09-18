@@ -7,21 +7,23 @@ import Projects from './components/Project';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import "./tailwind.css"
+import "./tailwind.css";
 import Sidebar from './components/Sidebar';
 
 function App() {
   return (
-    <div className="App" >
+    <div className="App flex flex-col md:flex-row">
       <Navbar />
-      <Sidebar/>
-      <Home />
-      <About />
-      <Education />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <Sidebar />
+      <main className="flex-1">
+        <Home />
+        <About />
+        <Education />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
     </div>
   );
 }
