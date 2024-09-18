@@ -4,7 +4,7 @@ function Home() {
   return (
     <div id="home" className="min-h-screen pt-16 bg-gray-900 text-white flex items-center">
   <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center">
-    <div className="intro text-center md:text-left mb-8 md:mb-0 flex-1">
+    <div className="intro text-center md:text-left mb-8 px-8 md:mb-0 flex-1">
       <p className="text-2xl md:text-3xl font-semibold mb-4">Hello Folks..!</p>
       <h3 className="text-4xl md:text-5xl font-bold">
         I am <span className="text-red-500">Shivshankar Ghyar</span><br />
