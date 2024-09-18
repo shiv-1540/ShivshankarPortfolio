@@ -3,7 +3,7 @@ import React from 'react';
 function Navbar() {
   return (
     <nav className="fixed w-full top-0 z-50 bg-zinc-900 text-white py-4 shadow-lg">
-    <div className="container mx-auto flex justify-between items-center px-6">
+    <div className="container mx-auto flex justify-between items-center px-12">
       <strong className="text-3xl font-extrabold text-white flex items-center">
         <span className="text-red-500 text-4xl">S</span>
         hiv
