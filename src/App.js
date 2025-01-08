@@ -8,7 +8,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
 import "./tailwind.css";
-import Sidebar from './components/Sidebar';
+
 
 function App() {
   return (
